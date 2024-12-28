@@ -1,2 +1,2 @@
-# Repository-Portfolio
-Portfolio - My Portfolio Website
+# Portfolio - My Portfolio Website
+The README file will be updated soon.
