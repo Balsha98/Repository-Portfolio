@@ -1,0 +1,157 @@
+/* ─── CIRCUIT BAR (desktop) ─── */
+.circuit-bar {
+    position: fixed;
+    right: 1.4rem;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 300;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 52vh;
+    pointer-events: none;
+    user-select: none;
+}
+
+.circuit-bar__dot {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    border: 1.5px solid var(--muted);
+    background: transparent;
+    flex-shrink: 0;
+}
+
+.circuit-bar__rail {
+    flex: 1;
+    width: 1px;
+    background: var(--border);
+    position: relative;
+    overflow: visible;
+}
+
+/* Glowing fill above node */
+.circuit-bar__fill {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 0%;
+    background: linear-gradient(to bottom, var(--accent), rgba(232, 255, 60, 0.3));
+    transition: height 0.08s linear;
+}
+
+/* Traveling node */
+.circuit-bar__node {
+    position: absolute;
+    left: 50%;
+    top: 0%;
+    transform: translate(-50%, -50%);
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background: var(--accent);
+    box-shadow:
+        0 0 0 3px rgba(232, 255, 60, 0.15),
+        0 0 12px var(--accent),
+        0 0 28px rgba(232, 255, 60, 0.35);
+    transition: top 0.08s linear;
+    z-index: 2;
+}
+
+/* Pulse ring on node */
+.circuit-bar__node::after {
+    content: "";
+    position: absolute;
+    inset: -5px;
+    border-radius: 50%;
+    border: 1px solid var(--accent);
+    opacity: 0;
+    animation: pulseRing 2s ease-out infinite;
+}
+
+@keyframes pulseRing {
+    0% {
+        transform: scale(1);
+        opacity: 0.6;
+    }
+    100% {
+        transform: scale(2.4);
+        opacity: 0;
+    }
+}
+
+/* Section ticks */
+.circuit-bar__tick {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 8px;
+    height: 1px;
+    background: var(--muted);
+    transition:
+        background 0.3s,
+        width 0.3s,
+        box-shadow 0.3s;
+}
+
+.circuit-bar__tick--active {
+    background: var(--accent);
+    width: 14px;
+    box-shadow: 0 0 6px var(--accent);
+}
+
+/* Section label beside active tick */
+.circuit-bar__tick-label {
+    position: absolute;
+    right: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-right: 8px;
+    font-family: var(--font-mono);
+    font-size: 0.5rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--accent);
+    white-space: nowrap;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.circuit-bar__tick--active .circuit-bar__tick-label {
+    opacity: 1;
+}
+
+/* Percentage display */
+.circuit-bar__pct {
+    font-family: var(--font-display);
+    font-size: 0.6rem;
+    font-weight: 800;
+    color: var(--accent);
+    letter-spacing: -0.02em;
+    margin-top: 6px;
+}
+
+/* ─── MOBILE PROGRESS BAR ─── */
+.mobile-progress {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 3px;
+    background: linear-gradient(to right, var(--accent), var(--accent2));
+    z-index: 500;
+    transition: width 0.08s linear;
+    box-shadow: 0 0 10px var(--accent);
+}
+
+/* ─── RESPONSIVE ─── */
+@media (max-width: 840px) {
+    .circuit-bar {
+        display: none;
+    }
+
+    .mobile-progress {
+        display: block;
+    }
+}
