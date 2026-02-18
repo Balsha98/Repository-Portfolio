@@ -1,3 +1,3 @@
-# BAZOVICH.DEV - Full-Stack Engineer Portfolio
+# BAZOVICH.DEV - Frontend Engineer Portfolio
 
 The README file will be updated soon.
