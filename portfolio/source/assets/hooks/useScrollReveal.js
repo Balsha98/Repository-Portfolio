@@ -1,30 +1,34 @@
-import { useEffect, useRef } from 'react';
+// IMPORTED CORE MODULES
+import { useEffect, useRef } from "react";
 
 export function useScrollReveal(options = {}) {
-  const ref = useRef(null);
+    const ref = useRef(null);
 
-  useEffect(() => {
-    const el = ref.current;
-    if (!el) return;
+    useEffect(() => {
+        const el = ref.current;
 
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add('visible');
-            observer.unobserve(entry.target);
-          }
-        });
-      },
-      {
-        threshold: options.threshold ?? 0.1,
-        rootMargin: options.rootMargin ?? '0px 0px -50px 0px',
-      }
-    );
+        if (!el) return;
 
-    observer.observe(el);
-    return () => observer.disconnect();
-  }, [options.threshold, options.rootMargin]);
+        const observer = new IntersectionObserver(
+            (entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add("visible");
 
-  return ref;
+                        observer.unobserve(entry.target);
+                    }
+                });
+            },
+            {
+                threshold: options.threshold ?? 0.1,
+                rootMargin: options.rootMargin ?? "0px 0px -50px 0px",
+            },
+        );
+
+        observer.observe(el);
+
+        return () => observer.disconnect();
+    }, [options.threshold, options.rootMargin]);
+
+    return ref;
 }

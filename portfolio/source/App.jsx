@@ -1,4 +1,4 @@
-// IMPORTED ROOT MODULES
+// IMPORTED CORE MODULES
 import { useTheme } from "./assets/hooks/useTheme";
 // IMPORTED STYLESHEETS
 import "./assets/styles/globals.css";

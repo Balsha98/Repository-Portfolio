@@ -1,4 +1,4 @@
-// IMPORTED ROOT MODULES
+// IMPORTED CORE MODULES
 import { useState, useEffect } from "react";
 // IMPORTED CUSTOM MODULES
 import ThemeToggle from "../ThemeToggle/ThemeToggle";

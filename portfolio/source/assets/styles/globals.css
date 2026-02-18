@@ -1,4 +1,4 @@
-/* ─── CSS VARIABLES — DARK (default) ─── */
+/* ─── CSS VARIABLES — DARK (DEFAULT) ─── */
 :root,
 [data-theme="dark"] {
     --bg: #0a0a0f;
@@ -32,31 +32,32 @@
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 /* ─── HIDE NATIVE SCROLLBAR ─── */
 html {
+    scrollbar-width: none;
     scroll-behavior: smooth;
-    scrollbar-width: none; /* Firefox */
 }
+
 html::-webkit-scrollbar {
-    display: none; /* Chrome / Safari */
+    display: none;
 }
 
 body {
-    background: var(--bg);
-    color: var(--text);
-    font-family: var(--font-mono);
     font-size: 14px;
+    font-family: var(--font-mono);
     line-height: 1.7;
-    overflow-x: hidden;
+    color: var(--text);
+    background: var(--bg);
     /* Smooth theme transition on all colour properties */
     transition:
         background-color 0.35s var(--ease-out-expo),
         color 0.35s var(--ease-out-expo);
+    overflow-x: hidden;
 }
 
 /* ─── NOISE GRAIN OVERLAY ─── */
@@ -65,121 +66,129 @@ body::before {
     position: fixed;
     inset: 0;
     background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='1'/%3E%3C/svg%3E");
-    opacity: 0.03;
     pointer-events: none;
     z-index: 998;
+    opacity: 0.03;
 }
 
 /* ─── SHARED SCROLL-REVEAL CLASSES ─── */
 .reveal {
-    opacity: 0;
     transform: translateY(44px);
     transition:
         opacity 0.75s var(--ease-out-expo),
         transform 0.75s var(--ease-out-expo);
+    opacity: 0;
 }
 
 .reveal.from-left {
     transform: translateX(-52px);
 }
+
 .reveal.from-right {
     transform: translateX(52px);
 }
+
 .reveal.scale-in {
     transform: scale(0.93) translateY(18px);
 }
+
 .reveal.visible {
-    opacity: 1;
     transform: none;
+    opacity: 1;
 }
 
 /* Stagger container */
 .stagger > * {
-    opacity: 0;
     transform: translateY(34px);
     transition:
         opacity 0.65s var(--ease-out-expo),
         transform 0.65s var(--ease-out-expo);
+    opacity: 0;
 }
 
 .stagger.visible > *:nth-child(1) {
-    opacity: 1;
     transform: none;
     transition-delay: 0s;
-}
-.stagger.visible > *:nth-child(2) {
     opacity: 1;
+}
+
+.stagger.visible > *:nth-child(2) {
     transform: none;
     transition-delay: 0.1s;
-}
-.stagger.visible > *:nth-child(3) {
     opacity: 1;
+}
+
+.stagger.visible > *:nth-child(3) {
     transform: none;
     transition-delay: 0.2s;
-}
-.stagger.visible > *:nth-child(4) {
     opacity: 1;
+}
+
+.stagger.visible > *:nth-child(4) {
     transform: none;
     transition-delay: 0.3s;
-}
-.stagger.visible > *:nth-child(5) {
     opacity: 1;
+}
+
+.stagger.visible > *:nth-child(5) {
     transform: none;
     transition-delay: 0.4s;
-}
-.stagger.visible > *:nth-child(6) {
     opacity: 1;
+}
+
+.stagger.visible > *:nth-child(6) {
     transform: none;
     transition-delay: 0.5s;
+    opacity: 1;
 }
 
 /* ─── SHARED BUTTON STYLES ─── */
 .btn {
     display: inline-block;
     padding: 0.85rem 2rem;
-    border-radius: 2px;
-    font-family: var(--font-mono);
     font-size: 0.8rem;
+    font-family: var(--font-mono);
     letter-spacing: 0.06em;
     text-transform: uppercase;
     text-decoration: none;
+    border-radius: 2px;
     transition: all 0.22s;
     cursor: pointer;
 }
 
 .btn-primary {
-    background: var(--accent);
-    color: #0a0a0f;
     font-weight: 700;
+    color: #0a0a0f;
+    background: var(--accent);
     border: 1.5px solid var(--accent);
 }
 
 .btn-primary:hover {
-    background: transparent;
     color: var(--accent);
+    background: transparent;
 }
 
 .btn-ghost {
-    background: transparent;
     color: var(--text);
+    background: transparent;
     border: 1.5px solid var(--border);
 }
 
 .btn-ghost:hover {
-    border-color: var(--accent);
     color: var(--accent);
+    border-color: var(--accent);
 }
 
 .btn-dark {
-    background: #0a0a0f;
-    color: var(--accent);
-    border: 2px solid #0a0a0f;
     font-weight: 700;
+    color: var(--accent);
+    background: #0a0a0f;
+    border: 2px solid #0a0a0f;
 }
 
 .btn-dark:hover {
-    background: transparent;
     color: #0a0a0f;
+    background: transparent;
 }
 
 /* ─── SHARED SECTION STYLES ─── */
@@ -193,13 +202,13 @@ body::before {
 .section-num {
     font-size: 0.7rem;
     letter-spacing: 0.2em;
-    color: var(--accent);
     text-transform: uppercase;
+    color: var(--accent);
 }
 
 h2 {
-    font-family: var(--font-display);
     font-size: clamp(2rem, 4vw, 3rem);
+    font-family: var(--font-display);
     font-weight: 800;
     letter-spacing: -0.03em;
     line-height: 1.1;
@@ -208,10 +217,10 @@ h2 {
 /* ─── CURSOR BLINK ─── */
 .cursor {
     display: inline-block;
+    vertical-align: middle;
     width: 3px;
     height: 1.1em;
     background: var(--accent);
-    vertical-align: middle;
     animation: blink 1s step-end infinite;
 }
 
@@ -227,6 +236,7 @@ h2 {
         opacity: 0;
         transform: translateY(32px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -238,6 +248,7 @@ h2 {
     100% {
         transform: translateY(0);
     }
+
     50% {
         transform: translateY(-8px);
     }

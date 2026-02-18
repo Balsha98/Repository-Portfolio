@@ -1,4 +1,4 @@
-// IMPORTED ROOT MODULES
+// IMPORTED CORE MODULES
 import { useEffect, useRef, useState } from "react";
 // IMPORTED CUSTOM MODULES
 import { useScrollProgress } from "../../assets/hooks/useScrollProgress";

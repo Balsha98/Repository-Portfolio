@@ -1,26 +1,30 @@
-import { useState, useEffect } from 'react';
+// IMPORTED CORE MODULES
+import { useState, useEffect } from "react";
 
-const STORAGE_KEY = 'portfolio-theme';
+const STORAGE_KEY = "portfolio-theme";
 
 function getInitialTheme() {
-  const saved = localStorage.getItem(STORAGE_KEY);
-  if (saved === 'dark' || saved === 'light') return saved;
-  return window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+    const saved = localStorage.getItem(STORAGE_KEY);
+
+    if (saved === "dark" || saved === "light") return saved;
+
+    return window.matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark";
 }
 
 export function useTheme() {
-  const [theme, setTheme] = useState('dark');
+    const [theme, setTheme] = useState("dark");
 
-  useEffect(() => {
-    setTheme(getInitialTheme());
-  }, []);
+    useEffect(() => {
+        setTheme(getInitialTheme());
+    }, []);
 
-  useEffect(() => {
-    document.documentElement.setAttribute('data-theme', theme);
-    localStorage.setItem(STORAGE_KEY, theme);
-  }, [theme]);
+    useEffect(() => {
+        document.documentElement.setAttribute("data-theme", theme);
 
-  const toggle = () => setTheme((prev) => (prev === 'dark' ? 'light' : 'dark'));
+        localStorage.setItem(STORAGE_KEY, theme);
+    }, [theme]);
 
-  return { theme, toggle };
+    const toggle = () => setTheme((prev) => (prev === "dark" ? "light" : "dark"));
+
+    return { theme, toggle };
 }
