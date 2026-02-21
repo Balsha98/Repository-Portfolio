@@ -1,7 +1,6 @@
 /* MAIN NAVBAR CONTAINER */
 .div-main-navbar-container {
     position: sticky;
-    padding: 2.4rem 3.2rem;
 }
 
 /* MAIN EDGE CONTAINER */
@@ -9,7 +8,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0;
+    padding: 2.4rem 3.2rem;
 }
 
 .div-main-navbar-container h2 {
