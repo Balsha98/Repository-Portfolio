@@ -1,6 +1,11 @@
 /* ─── CSS VARIABLES — DARK (DEFAULT) ─── */
 :root,
 [data-theme="dark"] {
+    /* FONTS */
+    --font-display: "Syne", sans-serif;
+    --font-mono: "DM Mono", monospace;
+
+    /* COLORS */
     --bg: #0a0a0f;
     --surface: #111118;
     --border: #1e1e2e;
@@ -10,10 +15,8 @@
     --text: #e8e8f0;
     --subtext: #7a7a9a;
 
-    --font-display: "Syne", sans-serif;
-    --font-mono: "DM Mono", monospace;
-
-    --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+    /* TRANSITIONS */
+    --ease-out-expo: cubic-bezier(0.12, 1, 0.2, 1);
 }
 
 /* ─── CSS VARIABLES — LIGHT ─── */
@@ -29,9 +32,7 @@
 }
 
 /* ─── RESET ─── */
-*,
-*::before,
-*::after {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -39,7 +40,7 @@
 
 /* ─── HIDE NATIVE SCROLLBAR ─── */
 html {
-    scrollbar-width: none;
+    font-size: 10px;
     scroll-behavior: smooth;
 }
 
@@ -108,7 +109,7 @@ body::before {
 }
 
 /* Stagger container */
-.stagger > * {
+.stagger>* {
     transform: translateY(34px);
     transition:
         opacity 0.65s var(--ease-out-expo),
@@ -116,37 +117,37 @@ body::before {
     opacity: 0;
 }
 
-.stagger.visible > *:nth-child(1) {
+.stagger.visible>*:nth-child(1) {
     transform: none;
     transition-delay: 0s;
     opacity: 1;
 }
 
-.stagger.visible > *:nth-child(2) {
+.stagger.visible>*:nth-child(2) {
     transform: none;
     transition-delay: 0.1s;
     opacity: 1;
 }
 
-.stagger.visible > *:nth-child(3) {
+.stagger.visible>*:nth-child(3) {
     transform: none;
     transition-delay: 0.2s;
     opacity: 1;
 }
 
-.stagger.visible > *:nth-child(4) {
+.stagger.visible>*:nth-child(4) {
     transform: none;
     transition-delay: 0.3s;
     opacity: 1;
 }
 
-.stagger.visible > *:nth-child(5) {
+.stagger.visible>*:nth-child(5) {
     transform: none;
     transition-delay: 0.4s;
     opacity: 1;
 }
 
-.stagger.visible > *:nth-child(6) {
+.stagger.visible>*:nth-child(6) {
     transform: none;
     transition-delay: 0.5s;
     opacity: 1;
@@ -214,52 +215,4 @@ body::before {
     letter-spacing: 0.2em;
     text-transform: uppercase;
     color: var(--accent);
-}
-
-h2 {
-    font-size: clamp(2rem, 4vw, 3rem);
-    font-family: var(--font-display);
-    font-weight: 800;
-    letter-spacing: -0.03em;
-    line-height: 1.1;
-}
-
-/* ─── CURSOR BLINK ─── */
-.cursor {
-    display: inline-block;
-    vertical-align: middle;
-    width: 3px;
-    height: 1.1em;
-    background: var(--accent);
-    animation: blink 1s step-end infinite;
-}
-
-@keyframes blink {
-    50% {
-        opacity: 0;
-    }
-}
-
-/* ─── SHARED ANIMATIONS ─── */
-@keyframes fadeUp {
-    from {
-        opacity: 0;
-        transform: translateY(32px);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-@keyframes float {
-    0%,
-    100% {
-        transform: translateY(0);
-    }
-
-    50% {
-        transform: translateY(-8px);
-    }
 }
