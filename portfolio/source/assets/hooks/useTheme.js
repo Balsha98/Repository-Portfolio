@@ -24,9 +24,7 @@ const useTheme = function () {
 		localStorage.setItem(STORAGE_THEME_KEY, currentTheme);
 	}, [currentTheme]);
 
-	console.log(currentTheme);
-
-	return { currentTheme, onToggleTheme };
+	return [currentTheme, onToggleTheme];
 };
 
 export default useTheme;
