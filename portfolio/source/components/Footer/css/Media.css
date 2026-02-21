@@ -1,0 +1,8 @@
+@media (max-width: 768px) {
+
+    /* FOOTER CONTAINER */
+    .footer-container {
+        flex-direction: column;
+        gap: 1.2rem;
+    }
+}
