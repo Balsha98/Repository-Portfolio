@@ -34,7 +34,7 @@
     transition: color 0.2s ease-in-out;
 }
 
-.footer-container-socials-link-list-item a:hover,
+.footer-container-socials-link-list-item a:hover ion-icon,
 .footer-container-socials-link-list-item a:active ion-icon {
     color: var(--accent-primary);
 }
