@@ -3,6 +3,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding-top: 3.2rem;
 }
 
 .footer-container>p {
