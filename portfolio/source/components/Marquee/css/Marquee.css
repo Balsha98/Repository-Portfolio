@@ -1,0 +1,50 @@
+/* MARQUEE CONTAINER */
+.div-marquee-container {
+    padding: 1.6rem 0;
+    background-color: var(--container-surface);
+    border-top: 0.2rem solid var(--border-primary);
+    overflow: hidden;
+}
+
+/* MARQUEE CONTAINER LIST */
+.marquee-container-list {
+    display: flex;
+    align-items: center;
+    gap: 3.2rem;
+    width: max-content;
+    animation: marquee 24s linear infinite;
+}
+
+@keyframes marquee {
+    from {
+        transform: translate(0);
+    }
+
+    to {
+        transform: translate(-50%);
+    }
+}
+
+/* MARQUEE CONTAINER LIST ITEM */
+.marquee-container-list-item {
+    padding: 0.8rem 1.6rem;
+}
+
+.marquee-container-list-item p {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    font-size: 1.4rem;
+    font-family: var(--font-display);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--text-muted);
+}
+
+.marquee-container-list-item span {
+    display: inline-block;
+    width: 0.6rem;
+    height: 0.6rem;
+    background-color: var(--accent-primary);
+    transform: rotate(45deg);
+}
