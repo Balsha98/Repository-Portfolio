@@ -1,0 +1,91 @@
+/* MAIN NAVBAR CONTAINER */
+.div-main-navbar-container {
+    position: sticky;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2.4rem 3.2rem;
+}
+
+.div-main-navbar-container h2 {
+    font-size: 2rem;
+    font-family: var(--font-display);
+    font-weight: 800;
+    color: var(--accent-primary);
+}
+
+/* MAIN NAVBAR LINK LIST */
+.main-navbar {
+    display: flex;
+    align-items: center;
+    gap: 3.2rem;
+}
+
+/* MAIN NAVBAR LINK LIST */
+.main-navbar-link-list {
+    display: flex;
+    align-items: center;
+    gap: 3.2rem;
+    font-size: 1.4rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+/* MAIN NAVBAR LINK LIST ITEM */
+.main-navbar-link-list-item a:link,
+.main-navbar-link-list-item a:visited {
+    position: relative;
+    display: inline-block;
+    padding: 0.2em 0;
+    color: var(--text-secondary);
+    transition: color 0.2s ease-in-out;
+}
+
+.main-navbar-link-list-item a:hover,
+.main-navbar-link-list-item a:active {
+    color: var(--accent-primary);
+}
+
+.main-navbar-link-list-item a:link::after,
+.main-navbar-link-list-item a:visited::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 0.2rem;
+    background-color: var(--accent-primary);
+    transition: width 0.2s ease-in-out;
+}
+
+.main-navbar-link-list-item a:hover::after,
+.main-navbar-link-list-item a:active::after {
+    width: 100%;
+}
+
+/* MAIN NAVBAR BUTTON */
+.div-main-navbar-container button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.8rem;
+    background: transparent;
+    box-shadow: inset 0 0 0 0.2rem var(--border-primary);
+    border: none;
+    transition: box-shadow 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.div-main-navbar-container button:hover {
+    box-shadow: inset 0 0 0 0.2rem var(--accent-primary);
+}
+
+.div-main-navbar-container button ion-icon {
+    font-size: 1.6rem;
+    color: var(--text-secondary);
+    transition: color 0.2s ease-in-out;
+}
+
+.div-main-navbar-container button:hover ion-icon {
+    color: var(--accent-primary);
+}
