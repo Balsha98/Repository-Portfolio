@@ -16,7 +16,7 @@ const Nav = function () {
 		<div className="div-main-navbar-container">
 			<div className="div-main-edge-container">
 				<h2>BB_</h2>
-				<nav className={`main-navbar ${viewMobileNav ? "active" : ""}`}>
+				<nav className={`main-navbar${viewMobileNav ? " active" : ""}`}>
 					<ul className="main-navbar-link-list">
 						<li className="main-navbar-link-list-item">
 							<a href="#work">Work</a>

@@ -1,6 +1,7 @@
 // IMORTED CUSTOM COMPONENTS
 import Nav from "./components/Nav/Nav";
 import Hero from "./components/Hero/Hero";
+import Statistics from "./components/Statistics/Statistics";
 import Footer from "./components/Footer/Footer";
 // IMORTED STYLESHEETS
 import "./assets/css/variables.css";
@@ -13,6 +14,7 @@ const App = function () {
 			<Nav />
 			<div className="div-main-edge-container">
 				<Hero />
+				<Statistics />
 				<Footer />
 			</div>
 		</>
