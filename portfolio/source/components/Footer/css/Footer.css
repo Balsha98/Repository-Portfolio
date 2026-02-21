@@ -1,0 +1,40 @@
+/* FOOTER CONTAINER */
+.footer-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-container>p {
+    font-size: 1.2rem;
+    text-align: center;
+    color: var(--text-muted);
+}
+
+/* FOOTER CONTAINER SOCIALS LINK LIST */
+.footer-container-socials-link-list {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+/* FOOTER CONTAINER SOCIALS LINK LIST ITEM */
+.footer-container-socials-link-list-item a:link,
+.footer-container-socials-link-list-item a:visited {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.8rem;
+}
+
+.footer-container-socials-link-list-item a:link ion-icon,
+.footer-container-socials-link-list-item a:visited ion-icon {
+    font-size: 1.6rem;
+    color: var(--text-secondary);
+    transition: color 0.2s ease-in-out;
+}
+
+.footer-container-socials-link-list-item a:hover,
+.footer-container-socials-link-list-item a:active ion-icon {
+    color: var(--accent-primary);
+}
