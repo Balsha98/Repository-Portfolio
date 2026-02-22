@@ -6,7 +6,7 @@ import "./css/Statistics.css";
 const Statistics = function () {
 	return (
 		<>
-			<div className="div-statistics-container">
+			<section className="section-statistics-container">
 				<Marquee />
 				<ul className="statistics-container-list">
 					<li className="statistics-container-list-item">
@@ -22,7 +22,7 @@ const Statistics = function () {
 						<p>Courses Tutored</p>
 					</li>
 				</ul>
-			</div>
+			</section>
 		</>
 	);
 };

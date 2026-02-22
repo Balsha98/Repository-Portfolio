@@ -2,6 +2,7 @@
 import Nav from "./components/Nav/Nav";
 import Hero from "./components/Hero/Hero";
 import Statistics from "./components/Statistics/Statistics";
+import Projects from "./components/Projects/Projects";
 import Footer from "./components/Footer/Footer";
 // IMORTED STYLESHEETS
 import "./assets/css/variables.css";
@@ -15,6 +16,7 @@ const App = function () {
 			<div className="div-main-edge-container">
 				<Hero />
 				<Statistics />
+				<Projects />
 				<Footer />
 			</div>
 		</>
