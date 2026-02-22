@@ -4,7 +4,7 @@ import "./css/Media.css";
 
 const Projects = function () {
 	return (
-		<section id="#work" className="section-projects-container">
+		<section id="work" className="section-projects-container">
 			<header className="header-section-projects-container">
 				<span>01 / Work</span>
 				<h2>Selected Projects</h2>
