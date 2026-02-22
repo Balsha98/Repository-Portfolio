@@ -1,0 +1,139 @@
+/* SECTION PROJECTS CONTAINER */
+.section-projects-container {
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+    padding: 3.2rem 0;
+}
+
+/* HEADER SECTION PROJECTS CONTAINER */
+.header-section-projects-container {
+    display: flex;
+    align-items: baseline;
+    gap: 2.4rem;
+}
+
+.header-section-projects-container span {
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--accent-primary);
+}
+
+.header-section-projects-container h2 {
+    font-size: 4.8rem;
+    font-family: var(--font-display);
+    font-weight: 800;
+}
+
+/* PROJECT CARDS CONTAINER */
+.div-project-cards-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.div-project-card-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+    padding: 3.2rem;
+    transition: background-color 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.div-project-card-container:first-child {
+    grid-column: span 2;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3.2rem;
+    border-bottom: 0.2rem solid var(--border-primary);
+}
+
+.div-project-card-container:nth-child(even)::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0.2rem;
+    height: 100%;
+    background-color: var(--border-primary);
+    transform: translateX(50%);
+}
+
+.div-project-card-container:hover {
+    background-color: var(--container-surface);
+}
+
+/* PROJECT CARD OVERVIEW CONTAINER */
+.div-project-card-overview-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+}
+
+/* HEADER PROJECT CARD OVERVIEW CONTAINER */
+.header-project-card-overview-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+}
+
+.header-project-card-overview-container span {
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--accent-primary);
+}
+
+.header-project-card-overview-container h2 {
+    font-size: 3.2rem;
+    font-family: var(--font-display);
+}
+
+/* PROJECT CARD INFO CONTAINER */
+.div-project-card-info-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+}
+
+.div-project-card-info-container>p {
+    font-size: 1.4rem;
+    line-height: 1.6;
+    color: var(--text-secondary);
+}
+
+/* PROJECT CARD TECH STACK LIST */
+.project-card-tech-stack-list {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+}
+
+/* PROJECT CARD TECH STACK LIST ITEM */
+.project-card-tech-stack-list-item {
+    padding: 0.8rem 1.6rem;
+    letter-spacing: 2px;
+    box-shadow: inset 0 0 0 0.2rem var(--border-primary);
+}
+
+.project-card-tech-stack-list-item span {
+    text-transform: uppercase;
+}
+
+/* PROJECT CARD THUMBNAIL CONTAINER */
+.div-project-card-thumbnail-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--container-surface);
+}
+
+.div-project-card-thumbnail-container span {
+    font-size: 3.2rem;
+    font-family: var(--font-display);
+    font-weight: 800;
+    text-transform: uppercase;
+    color: var(--accent-primary);
+}
