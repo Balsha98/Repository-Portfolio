@@ -20,7 +20,7 @@ const EXPERIENCES = [
 	{
 		timeline: "2023 — 2025",
 		position: "University Teaching Assistant",
-		company: "RIT Croatia (Part-Time)",
+		company: "Rochester Institute of Technology @ Croatia (Part-Time)",
 		description:
 			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia molestiae maiores explicabo blanditiis asperiores assumenda, ipsa magnamrepudiandae maxime. Totam numquam dolores nam maiores fuga, tempore iusto pariatur consectetur at!",
 	},
@@ -34,9 +34,9 @@ const Experience = function () {
 				<h2>Where I've Worked</h2>
 			</header>
 			<ul className="section-experience-positions-list">
-				{EXPERIENCES.map(({ timeline, position, company, description }) => {
+				{EXPERIENCES.map(({ timeline, position, company, description }, i) => {
 					return (
-						<li className="section-experience-positions-list-item">
+						<li key={i} className="section-experience-positions-list-item">
 							<header className="header-section-experience-positions-list-item">
 								<span>{timeline}</span>
 								<h4>{position}</h4>
