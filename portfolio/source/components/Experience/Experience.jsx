@@ -37,15 +37,17 @@ const Experience = function () {
 				{EXPERIENCES.map(({ timeline, position, company, description }, i) => {
 					return (
 						<li key={i} className="section-experience-positions-list-item">
-							<header className="header-section-experience-positions-list-item">
-								<span>{timeline}</span>
-								<h4>{position}</h4>
-								<div className="div-header-section-experience-positions-list-item-company-container">
-									<ion-icon src="/media/icons/arrow-right.svg" />
-									<span>{company}</span>
-								</div>
-							</header>
-							<p>{description}</p>
+							<span>{timeline}</span>
+							<div className="div-section-experience-positions-list-item-content-container">
+								<header className="header-section-experience-positions-list-item">
+									<h4>{position}</h4>
+									<div className="div-header-section-experience-positions-list-item-company-container">
+										<ion-icon src="/media/icons/arrow-right.svg" />
+										<span>{company}</span>
+									</div>
+								</header>
+								<p>{description}</p>
+							</div>
 						</li>
 					);
 				})}
