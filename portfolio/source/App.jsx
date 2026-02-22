@@ -3,6 +3,7 @@ import Nav from "./components/Nav/Nav";
 import Hero from "./components/Hero/Hero";
 import Statistics from "./components/Statistics/Statistics";
 import Projects from "./components/Projects/Projects";
+import Skills from "./components/Skills/Skills";
 import Footer from "./components/Footer/Footer";
 // IMORTED STYLESHEETS
 import "./assets/css/variables.css";
@@ -17,6 +18,7 @@ const App = function () {
 				<Hero />
 				<Statistics />
 				<Projects />
+				<Skills />
 				<Footer />
 			</div>
 		</>
