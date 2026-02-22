@@ -1,0 +1,96 @@
+/* SECTION EXPERIENCE CONTAINER */
+.section-experience-container {
+    display: flex;
+    flex-direction: column;
+    gap: 6.4rem;
+    padding: 4.8rem 0;
+}
+
+/* HEADER SECTION EXPERIENCE CONTAINER */
+.header-section-experience-container {
+    display: flex;
+    align-items: baseline;
+    gap: 2.4rem;
+}
+
+.header-section-experience-container span {
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--accent-primary);
+}
+
+.header-section-experience-container h2 {
+    font-size: 4.8rem;
+    font-family: var(--font-display);
+    font-weight: 800;
+}
+
+/* SECTION EXPERIENCE POSITIONS LIST */
+.section-experience-positions-list {
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+}
+
+/* SECTION EXPERIENCE POSITIONS LIST ITEM */
+.section-experience-positions-list-item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+    padding-bottom: 3.2rem;
+}
+
+.section-experience-positions-list-item::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0.2rem;
+    background-color: var(--border-primary);
+    transform: translateY(50%);
+}
+
+/* HEADER SECTION EXPERIENCE POSITIONS LIST ITEM */
+.header-section-experience-positions-list-item {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.header-section-experience-positions-list-item>span {
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    color: var(--text-secondary);
+}
+
+.header-section-experience-positions-list-item h4 {
+    font-size: 2.4rem;
+    font-family: var(--font-display);
+}
+
+/* HEADER SECTION EXPERIENCE POSITIONS LIST ITEM COMPANY CONTAINER */
+.div-header-section-experience-positions-list-item-company-container {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.div-header-section-experience-positions-list-item-company-container ion-icon {
+    font-size: 1.4rem;
+    color: var(--accent-primary);
+}
+
+.div-header-section-experience-positions-list-item-company-container span {
+    font-size: 1.4rem;
+    color: var(--accent-primary);
+}
+
+.section-experience-positions-list-item>p {
+    width: 50%;
+    font-size: 1.4rem;
+    line-height: 1.8;
+    color: var(--text-secondary);
+}

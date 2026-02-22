@@ -4,6 +4,7 @@ import Hero from "./components/Hero/Hero";
 import Statistics from "./components/Statistics/Statistics";
 import Projects from "./components/Projects/Projects";
 import Skills from "./components/Skills/Skills";
+import Experience from "./components/Experience/Experience";
 import Footer from "./components/Footer/Footer";
 // IMORTED STYLESHEETS
 import "./assets/css/variables.css";
@@ -19,6 +20,7 @@ const App = function () {
 				<Statistics />
 				<Projects />
 				<Skills />
+				<Experience />
 				<Footer />
 			</div>
 		</>
