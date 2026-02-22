@@ -43,6 +43,25 @@
     cursor: pointer;
 }
 
+.div-projects-card-container:hover {
+    background-color: var(--container-surface);
+}
+
+.div-projects-card-container::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 0.2rem;
+    background-color: var(--accent-primary);
+    transition: width 0.4s ease-in-out;
+}
+
+.div-projects-card-container:hover::before {
+    width: 100%;
+}
+
 .div-projects-card-container:first-child {
     grid-column: span 2;
     display: grid;
@@ -60,10 +79,6 @@
     height: 100%;
     background-color: var(--border-primary);
     transform: translateX(50%);
-}
-
-.div-projects-card-container:hover {
-    background-color: var(--container-surface);
 }
 
 /* PROJECTS CARD OVERVIEW CONTAINER */
