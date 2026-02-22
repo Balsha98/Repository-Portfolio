@@ -2,6 +2,30 @@
 import "./css/Experience.css";
 // import "./css/Media.css";
 
+const EXPERIENCES = [
+	{
+		timeline: "2025 — Present",
+		position: "Junior Frontend Engineer",
+		company: "EZ-Booker (Contract)",
+		description:
+			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia molestiae maiores explicabo blanditiis asperiores assumenda, ipsa magnamrepudiandae maxime. Totam numquam dolores nam maiores fuga, tempore iusto pariatur consectetur at!",
+	},
+	{
+		timeline: "2024 — 2025",
+		position: "UI Intergration Specialist Intern",
+		company: "EZ-Booker (Internship/Full-Time)",
+		description:
+			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia molestiae maiores explicabo blanditiis asperiores assumenda, ipsa magnamrepudiandae maxime. Totam numquam dolores nam maiores fuga, tempore iusto pariatur consectetur at!",
+	},
+	{
+		timeline: "2023 — 2025",
+		position: "University Teaching Assistant",
+		company: "RIT Croatia (Part-Time)",
+		description:
+			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia molestiae maiores explicabo blanditiis asperiores assumenda, ipsa magnamrepudiandae maxime. Totam numquam dolores nam maiores fuga, tempore iusto pariatur consectetur at!",
+	},
+];
+
 const Experience = function () {
 	return (
 		<section id="experience" className="section-experience-container">
@@ -10,48 +34,21 @@ const Experience = function () {
 				<h2>Where I've Worked</h2>
 			</header>
 			<ul className="section-experience-positions-list">
-				<li className="section-experience-positions-list-item">
-					<header className="header-section-experience-positions-list-item">
-						<span>2025 &mdash; Present</span>
-						<h4>Junior Frontend Engineer</h4>
-						<div className="div-header-section-experience-positions-list-item-company-container">
-							<ion-icon src="/media/icons/arrow-right.svg" />
-							<span>EZ-Booker (Contract)</span>
-						</div>
-					</header>
-					<p>
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia molestiae maiores explicabo blanditiis asperiores assumenda, ipsa magnam
-						repudiandae maxime. Totam numquam dolores nam maiores fuga, tempore iusto pariatur consectetur at!
-					</p>
-				</li>
-				<li className="section-experience-positions-list-item">
-					<header className="header-section-experience-positions-list-item">
-						<span>2024 &mdash; 2025</span>
-						<h4>UI Intergration Specialist Intern</h4>
-						<div className="div-header-section-experience-positions-list-item-company-container">
-							<ion-icon src="/media/icons/arrow-right.svg" />
-							<span>EZ-Booker (Internship/Full-Time)</span>
-						</div>
-					</header>
-					<p>
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia molestiae maiores explicabo blanditiis asperiores assumenda, ipsa magnam
-						repudiandae maxime. Totam numquam dolores nam maiores fuga, tempore iusto pariatur consectetur at!
-					</p>
-				</li>
-				<li className="section-experience-positions-list-item">
-					<header className="header-section-experience-positions-list-item">
-						<span>2023 &mdash; 2025</span>
-						<h4>University Teaching Assistant</h4>
-						<div className="div-header-section-experience-positions-list-item-company-container">
-							<ion-icon src="/media/icons/arrow-right.svg" />
-							<span>RIT Croatia (Part-Time)</span>
-						</div>
-					</header>
-					<p>
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia molestiae maiores explicabo blanditiis asperiores assumenda, ipsa magnam
-						repudiandae maxime. Totam numquam dolores nam maiores fuga, tempore iusto pariatur consectetur at!
-					</p>
-				</li>
+				{EXPERIENCES.map(({ timeline, position, company, description }) => {
+					return (
+						<li className="section-experience-positions-list-item">
+							<header className="header-section-experience-positions-list-item">
+								<span>{timeline}</span>
+								<h4>{position}</h4>
+								<div className="div-header-section-experience-positions-list-item-company-container">
+									<ion-icon src="/media/icons/arrow-right.svg" />
+									<span>{company}</span>
+								</div>
+							</header>
+							<p>{description}</p>
+						</li>
+					);
+				})}
 			</ul>
 		</section>
 	);
