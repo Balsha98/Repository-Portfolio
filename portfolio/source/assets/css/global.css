@@ -20,6 +20,31 @@ body {
     background-color: var(--container-primary);
 }
 
+body::before,
+body::after {
+    content: "";
+    position: fixed;
+    width: 48rem;
+    height: 48rem;
+    border-radius: 50%;
+    filter: blur(24rem);
+    pointer-events: unset;
+    opacity: 0.2;
+    z-index: -1;
+}
+
+body::before {
+    top: -24rem;
+    left: -24rem;
+    background-color: var(--accent-primary);
+}
+
+body::after {
+    bottom: -24rem;
+    right: -24rem;
+    background-color: var(--accent-secondary);
+}
+
 ul {
     list-style: none;
 }

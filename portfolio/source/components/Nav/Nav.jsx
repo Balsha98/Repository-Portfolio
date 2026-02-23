@@ -6,6 +6,13 @@ import useTheme from "../../assets/hooks/useTheme";
 import "./css/Nav.css";
 import "./css/Media.css";
 
+const LINKS = [
+	{ link: "#work", label: "Work" },
+	{ link: "#skills", label: "Skills" },
+	{ link: "#experience", label: "Experience" },
+	{ link: "#contact", label: "Contact" },
+];
+
 const Nav = function () {
 	const [isScrolling, setIsScrolling] = useState(false);
 	const [currentTheme, onToggleTheme] = useTheme();
@@ -27,18 +34,13 @@ const Nav = function () {
 				<h2>BB_</h2>
 				<nav className={`main-navbar${viewMobileNav ? " active" : ""}`}>
 					<ul className="main-navbar-link-list">
-						<li className="main-navbar-link-list-item">
-							<a href="#work">Work</a>
-						</li>
-						<li className="main-navbar-link-list-item">
-							<a href="#skills">Skills</a>
-						</li>
-						<li className="main-navbar-link-list-item">
-							<a href="#experience">Experience</a>
-						</li>
-						<li className="main-navbar-link-list-item">
-							<a href="#contact">Contact</a>
-						</li>
+						{LINKS.map(({ link, label }, i) => {
+							return (
+								<li key={i} className="main-navbar-link-list-item">
+									<a href={link}>{label}</a>
+								</li>
+							);
+						})}
 					</ul>
 				</nav>
 				<div className="div-main-navbar-actions-container">
