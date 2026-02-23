@@ -29,6 +29,7 @@
     font-family: var(--font-display);
     font-weight: 800;
     color: var(--accent-primary);
+    cursor: pointer;
 }
 
 /* MAIN NAVBAR LINK LIST */

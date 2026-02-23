@@ -18,6 +18,8 @@ const Nav = function () {
 	const [currentTheme, onToggleTheme] = useTheme();
 	const [viewMobileNav, setViewMobileNav] = useState(false);
 
+	const handleScrollToTop = () => window.scrollTo({ top: 0 });
+
 	const handleSetViewMobileNav = () => setViewMobileNav((v) => !v);
 
 	useEffect(() => {
@@ -31,7 +33,7 @@ const Nav = function () {
 	return (
 		<div className={`div-main-navbar-container${isScrolling ? " fixed" : ""}`}>
 			<div className={`div-main-edge-container${isScrolling ? " fixed" : ""}`}>
-				<h2>BB_</h2>
+				<h2 onClick={handleScrollToTop}>BB_</h2>
 				<nav className={`main-navbar${viewMobileNav ? " active" : ""}`}>
 					<ul className="main-navbar-link-list">
 						{LINKS.map(({ link, label }, i) => {
