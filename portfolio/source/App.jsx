@@ -5,6 +5,7 @@ import Statistics from "./components/Statistics/Statistics";
 import Projects from "./components/Projects/Projects";
 import Skills from "./components/Skills/Skills";
 import Experience from "./components/Experience/Experience";
+import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
 // IMORTED STYLESHEETS
 import "./assets/css/variables.css";
@@ -21,6 +22,7 @@ const App = function () {
 				<Projects />
 				<Skills />
 				<Experience />
+				<Contact />
 				<Footer />
 			</div>
 		</>

@@ -1,0 +1,94 @@
+/* SECTION CONTACT CONTAINER */
+.section-contact-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.4rem;
+    padding: 8rem 4.8rem;
+    background-color: var(--accent-primary);
+    overflow: hidden;
+}
+
+.section-contact-container::before {
+    content: "HIRE ME";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 24rem;
+    font-family: var(--font-display);
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-wrap: nowrap;
+    color: var(--container-primary);
+    transform: translate(-50%, -50%);
+    opacity: 0.08;
+    z-index: 1;
+}
+
+/* HEADER SECTION CONTACT CONTAINER */
+.header-section-contact-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+    z-index: 2;
+}
+
+.header-section-contact-container h4 {
+    width: 80rem;
+    font-size: 4.8rem;
+    font-family: var(--font-display);
+    font-weight: 800;
+    text-align: center;
+    color: var(--container-primary);
+}
+
+.header-section-contact-container p {
+    font-size: 1.4rem;
+    color: var(--text-muted);
+}
+
+.section-contact-container a:link,
+.section-contact-container a:visited {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    padding: 1.8rem 3.6rem;
+    background-color: var(--container-primary);
+    transition: all 0.2s ease-in-out;
+    z-index: 2;
+}
+
+.section-contact-container a:hover,
+.section-contact-container a:active {
+    color: var(--container-primary);
+    background-color: var(--accent-primary);
+    box-shadow: inset 0 0 0 0.2rem var(--border-primary);
+}
+
+.section-contact-container a:link *,
+.section-contact-container a:visited * {
+    color: var(--accent-primary);
+    transition: all 0.2s ease-in-out;
+}
+
+.section-contact-container a:hover *,
+.section-contact-container a:active * {
+    color: var(--container-primary);
+}
+
+.section-contact-container a:link ion-icon,
+.section-contact-container a:visited ion-icon {
+    font-size: 2rem;
+}
+
+.section-contact-container a:link span,
+.section-contact-container a:visited span {
+    font-size: 1.6rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
