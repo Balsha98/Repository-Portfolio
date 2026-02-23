@@ -1,6 +1,6 @@
 // IMPORTED STYLESHEETS
 import "./css/Contact.css";
-// import "./css/Media.css";
+import "./css/Media.css";
 
 const Contact = function () {
 	return (
