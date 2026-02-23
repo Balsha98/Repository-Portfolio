@@ -1,0 +1,34 @@
+@media (max-width: 768px) {
+
+    /* SECTION EXPERIENCE CONTAINER */
+    .section-experience-container {
+        gap: 3.2rem;
+        padding: 3.2rem 0;
+    }
+
+    /* HEADER SECTION EXPERIENCE CONTAINER */
+    .header-section-experience-container {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1.2rem;
+    }
+
+    .header-section-experience-container h2 {
+        font-size: 3.2rem;
+    }
+
+    /* SECTION EXPERIENCE POSITIONS LIST ITEM */
+    .section-experience-positions-list-item {
+        flex-direction: column;
+        gap: 1.6rem;
+    }
+
+    .section-experience-positions-list-item>span {
+        width: auto;
+    }
+
+    /* HEADER SECTION EXPERIENCE POSITIONS LIST ITEM COMPANY CONTAINER */
+    .div-section-experience-positions-list-item-content-container>p {
+        width: 100%;
+    }
+}

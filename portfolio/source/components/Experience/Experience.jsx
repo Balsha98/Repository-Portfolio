@@ -1,6 +1,6 @@
 // IMPORTED STYLESHEETS
 import "./css/Experience.css";
-// import "./css/Media.css";
+import "./css/Media.css";
 
 const EXPERIENCES = [
 	{
