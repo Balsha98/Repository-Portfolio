@@ -3,7 +3,7 @@
     position: sticky;
     top: 0;
     transition: all 0.2s ease-in-out;
-    z-index: 9999;
+    z-index: 9998;
 }
 
 .fixed.div-main-navbar-container {
@@ -12,7 +12,7 @@
 }
 
 /* MAIN EDGE CONTAINER */
-.div-main-navbar-container>.div-main-edge-container {
+.div-main-navbar-container > .div-main-edge-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -20,7 +20,7 @@
     transition: padding 0.2s ease-in-out;
 }
 
-.div-main-navbar-container>.fixed.div-main-edge-container {
+.div-main-navbar-container > .fixed.div-main-edge-container {
     padding: 1.6rem 3.2rem;
 }
 
@@ -76,13 +76,14 @@
 
 /* MAIN NAVBAR ACTIONS CONTAINER */
 .div-main-navbar-actions-container {
+    position: relative;
     display: flex;
     align-items: center;
     gap: 0.8rem;
+    z-index: 9999;
 }
 
 .div-main-navbar-actions-container button {
-    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -92,7 +93,6 @@
     border: none;
     transition: box-shadow 0.2s ease-in-out;
     cursor: pointer;
-    z-index: 9999;
 }
 
 .div-main-navbar-actions-container button:last-child {

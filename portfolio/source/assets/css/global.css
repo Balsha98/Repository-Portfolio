@@ -10,6 +10,7 @@
 html {
     font-size: 10px;
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 html::-webkit-scrollbar {
@@ -43,6 +44,15 @@ body::after {
     bottom: -24rem;
     right: -24rem;
     background-color: var(--accent-secondary);
+}
+
+.main-container {
+    transition: opacity 1.2s ease-in;
+    opacity: 0;
+}
+
+.active.main-container {
+    opacity: 1;
 }
 
 ul {

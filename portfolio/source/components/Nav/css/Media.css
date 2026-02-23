@@ -1,5 +1,4 @@
 @media (max-width: 768px) {
-
     /* MAIN NAVBAR */
     .main-navbar {
         position: fixed;
@@ -44,5 +43,4 @@
     .div-main-navbar-actions-container button:last-child {
         display: flex;
     }
-
 }
