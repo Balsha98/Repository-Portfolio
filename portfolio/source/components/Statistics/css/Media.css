@@ -1,0 +1,15 @@
+@media (max-width: 768px) {
+
+    /* STATISTICS CONTAINER LIST ITEM */
+    .statistics-container-list-item {
+        padding: 2.4rem;
+    }
+
+    .statistics-container-list-item span {
+        font-size: 3.2rem;
+    }
+
+    .statistics-container-list-item p {
+        font-size: 1.2rem;
+    }
+}

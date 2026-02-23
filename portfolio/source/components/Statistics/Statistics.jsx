@@ -2,6 +2,7 @@
 import Marquee from "../Marquee/Marquee";
 // IMPORTED STYLESHEETS
 import "./css/Statistics.css";
+import "./css/Media.css";
 
 const Statistics = function () {
 	return (
