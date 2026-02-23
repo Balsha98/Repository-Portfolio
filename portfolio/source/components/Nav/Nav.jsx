@@ -7,10 +7,11 @@ import "./css/Nav.css";
 import "./css/Media.css";
 
 const LINKS = [
-	{ link: "#work", label: "Work" },
-	{ link: "#skills", label: "Skills" },
-	{ link: "#experience", label: "Experience" },
-	{ link: "#contact", label: "Contact" },
+	{ link: "#work", label: "Work", external: false },
+	{ link: "#skills", label: "Skills", external: false },
+	{ link: "#experience", label: "Experience", external: false },
+	{ link: "#contact", label: "Contact", external: false },
+	{ link: "/documents/resume.pdf", label: "Resume", external: true },
 ];
 
 const Nav = function () {
@@ -36,10 +37,12 @@ const Nav = function () {
 				<h2 onClick={handleScrollToTop}>BB_</h2>
 				<nav className={`main-navbar${viewMobileNav ? " active" : ""}`}>
 					<ul className="main-navbar-link-list">
-						{LINKS.map(({ link, label }, i) => {
+						{LINKS.map(({ link, label, external }, i) => {
 							return (
 								<li key={i} className="main-navbar-link-list-item">
-									<a href={link}>{label}</a>
+									<a href={link} target={`_${external ? "blank" : "self"}`}>
+										{label}
+									</a>
 								</li>
 							);
 						})}
