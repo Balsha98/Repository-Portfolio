@@ -1,0 +1,132 @@
+/* LOADER CONTAINER */
+.div-loader-container {
+    position: fixed;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    padding: 4.8rem 8rem;
+    background-color: var(--container-primary);
+    transition: transform 0.8s ease-in-out;
+    z-index: 9999;
+}
+
+.hidden.div-loader-container {
+    transform: translateY(-100%);
+}
+
+/* HEADER LOADER CONTAINER */
+.header-loader-container {
+    display: flex;
+    flex-direction: column;
+    gap: 6.4rem;
+}
+
+.header-loader-container h2 {
+    font-size: 2rem;
+    font-family: var(--font-display);
+    font-weight: 800;
+    color: var(--accent-primary);
+}
+
+/* LOADER CONTENT CONTAINER */
+.div-loader-content-container {
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+}
+
+/* LOADER CONTENT LOADING CONTAINER */
+.div-loader-content-loading-container {
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+}
+
+.div-loader-content-loading-container>span {
+    font-size: 1.8rem;
+    font-family: var(--font-display);
+    font-weight: 800;
+    color: var(--accent-primary);
+}
+
+/* LOADER CONTENT LOADING TRACK */
+.div-loader-content-loading-track {
+    position: relative;
+    width: 32rem;
+    height: 0.2rem;
+    background-color: var(--container-surface);
+}
+
+/* LOADER CONTENT LOADING THUMB */
+.div-loader-content-loading-thumb {
+    position: absolute;
+    inset: 0;
+    width: 0;
+    height: 100%;
+    background-color: var(--accent-primary);
+    transition: width 0.2s ease-in;
+}
+
+/* LOADER CONTENT LOADING STEP LIST */
+.loader-content-loading-steps-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+/* LOADER CONTENT LOADING STEP LIST ITEM */
+.loader-content-loading-steps-list-item {
+    display: flex;
+    align-items: baseline;
+    gap: 0.4rem;
+}
+
+.loader-content-loading-steps-list-item p {
+    font-size: 1.4rem;
+    color: var(--text-secondary);
+}
+
+.loader-content-loading-steps-list-item p.highlight {
+    color: var(--accent-primary);
+}
+
+.loader-content-loading-steps-list-item span {
+    width: 0.6rem;
+    height: 0.8rem;
+    background-color: transparent;
+}
+
+.loader-content-loading-steps-list-item span.active {
+    background-color: var(--accent-primary);
+    animation: terminal 0.8s step-end infinite;
+}
+
+@keyframes terminal {
+    50% {
+        opacity: 0;
+    }
+}
+
+/* LOADER INDICATOR CONTAINER */
+.div-loader-indicator-container {
+    display: flex;
+    align-items: baseline;
+    gap: 0.8rem;
+    margin-top: auto;
+    opacity: 0.4;
+}
+
+.div-loader-indicator-container span {
+    font-size: 12rem;
+    font-family: var(--font-display);
+    font-weight: 800;
+    color: var(--text-secondary);
+}
+
+.div-loader-indicator-container p {
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}

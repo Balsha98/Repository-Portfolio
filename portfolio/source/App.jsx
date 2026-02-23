@@ -1,4 +1,5 @@
 // IMORTED CUSTOM COMPONENTS
+import Loader from "./components/Loader/Loader";
 import Nav from "./components/Nav/Nav";
 import Hero from "./components/Hero/Hero";
 import Statistics from "./components/Statistics/Statistics";
@@ -16,6 +17,7 @@ const App = function () {
 	return (
 		<>
 			<Nav />
+			<Loader />
 			<div className="div-main-edge-container">
 				<Hero />
 				<Statistics />
