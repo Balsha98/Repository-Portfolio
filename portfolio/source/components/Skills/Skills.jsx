@@ -1,5 +1,6 @@
 // IMPORTED STYLESHEETS
 import "./css/Skills.css";
+import "./css/Media.css";
 
 const Skills = function () {
 	return (

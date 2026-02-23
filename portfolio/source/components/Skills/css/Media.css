@@ -1,0 +1,25 @@
+@media (max-width: 768px) {
+
+    /* SECTION SKILLS CONTAINER */
+    .section-skills-container {
+        gap: 3.2rem;
+        padding: 4.8rem 3.2rem;
+    }
+
+    /* HEADER SECTION SKILLS CONTAINER */
+    .header-section-skills-container {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1.2rem;
+    }
+
+    .header-section-skills-container h2 {
+        font-size: 3.2rem;
+    }
+
+    /* SKILLS CARDS CONTAINER */
+    .div-skills-cards-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
