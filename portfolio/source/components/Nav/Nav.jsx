@@ -39,7 +39,7 @@ const Nav = function () {
 					<ul className="main-navbar-link-list">
 						{LINKS.map(({ link, label, external }, i) => {
 							return (
-								<li key={i} className="main-navbar-link-list-item">
+								<li key={i} className="main-navbar-link-list-item" onClick={handleSetViewMobileNav}>
 									<a href={link} target={`_${external ? "blank" : "self"}`}>
 										{label}
 									</a>
