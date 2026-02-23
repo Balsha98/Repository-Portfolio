@@ -34,7 +34,7 @@
 /* HEADER SECTION HERO CONTAINER HEADING */
 .header-section-hero-container-heading span {
     display: inline-block;
-    font-size: 9.6rem;
+    font-size: 12rem;
     font-family: var(--font-display);
     font-weight: 800;
 }
