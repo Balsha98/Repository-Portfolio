@@ -1,0 +1,8 @@
+@media (max-width: 768px) {
+
+    /* LOADER INDICATOR CONTAINER */
+    .div-loader-indicator-container span {
+        font-size: 9.6rem;
+    }
+
+}
