@@ -2,7 +2,13 @@
 .div-main-navbar-container {
     position: sticky;
     top: 0;
+    transition: all 0.2s ease-in-out;
     z-index: 9999;
+}
+
+.fixed.div-main-navbar-container {
+    border-bottom: 0.2rem solid var(--border-primary);
+    backdrop-filter: blur(2.4rem);
 }
 
 /* MAIN EDGE CONTAINER */
@@ -11,6 +17,11 @@
     align-items: center;
     justify-content: space-between;
     padding: 2.4rem 3.2rem;
+    transition: padding 0.2s ease-in-out;
+}
+
+.div-main-navbar-container>.fixed.div-main-edge-container {
+    padding: 1.6rem 3.2rem;
 }
 
 .div-main-navbar-container h2 {

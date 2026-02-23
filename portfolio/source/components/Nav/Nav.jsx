@@ -1,5 +1,5 @@
 // IMORTED CORE COMPONENTS
-import { useState } from "react";
+import { useEffect, useState } from "react";
 // IMORTED CUSTOM COMPONENTS
 import useTheme from "../../assets/hooks/useTheme";
 // IMORTED STYLESHEETS
@@ -7,14 +7,23 @@ import "./css/Nav.css";
 import "./css/Media.css";
 
 const Nav = function () {
+	const [isScrolling, setIsScrolling] = useState(false);
 	const [currentTheme, onToggleTheme] = useTheme();
 	const [viewMobileNav, setViewMobileNav] = useState(false);
 
 	const handleSetViewMobileNav = () => setViewMobileNav((v) => !v);
 
+	useEffect(() => {
+		const onIsScrolling = () => setIsScrolling(window.scrollY > 32);
+
+		window.addEventListener("scroll", onIsScrolling, { passive: true });
+
+		return () => window.removeEventListener("scroll", onIsScrolling);
+	}, []);
+
 	return (
-		<div className="div-main-navbar-container">
-			<div className="div-main-edge-container">
+		<div className={`div-main-navbar-container${isScrolling ? " fixed" : ""}`}>
+			<div className={`div-main-edge-container${isScrolling ? " fixed" : ""}`}>
 				<h2>BB_</h2>
 				<nav className={`main-navbar${viewMobileNav ? " active" : ""}`}>
 					<ul className="main-navbar-link-list">
