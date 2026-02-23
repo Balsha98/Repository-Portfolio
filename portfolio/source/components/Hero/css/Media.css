@@ -1,0 +1,24 @@
+@media (max-width: 768px) {
+
+    /* SECTION HERO CONTAINER */
+    .section-hero-container {
+        gap: 3.2rem;
+    }
+
+    /* HEADER SECTION HERO CONTAINER HEADING */
+    .header-section-hero-container-heading span {
+        font-size: 8rem;
+    }
+
+    /* SECTION HERO OVERVIEW CONTAINER */
+    .div-section-hero-overview-container {
+        gap: 3.2rem;
+    }
+
+    /* SECTION HERO OVERVIEW ACTIONS CONTAINER */
+    .div-section-hero-overview-actions-container a:link,
+    .div-section-hero-overview-actions-container a:visited {
+        font-size: 1.4rem;
+    }
+
+}

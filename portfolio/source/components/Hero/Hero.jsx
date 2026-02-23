@@ -1,5 +1,6 @@
 // IMORTED STYLESHEETS
 import "./css/Hero.css";
+import "./css/Media.css";
 
 const Hero = function () {
 	return (
