@@ -1,4 +1,5 @@
 @media (max-width: 768px) {
+
     /* MAIN NAVBAR */
     .main-navbar {
         position: fixed;
@@ -43,4 +44,15 @@
     .div-main-navbar-actions-container button:last-child {
         display: flex;
     }
+
+}
+
+@media (max-width: 576px) {
+
+    /* MAIN NAVBAR LINK LIST ITEM */
+    .main-navbar-link-list-item a:link,
+    .main-navbar-link-list-item a:visited {
+        font-size: 3.2rem;
+    }
+
 }
