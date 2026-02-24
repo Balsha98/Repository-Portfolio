@@ -6,3 +6,51 @@
     }
 
 }
+
+@media (max-width: 576px) {
+
+    /* LOADER CONTAINER */
+    .div-loader-container {
+        padding: 3.2rem;
+    }
+
+    /* HEADER LOADER CONTAINER */
+    .header-loader-container {
+        gap: 3.2rem;
+    }
+
+    /* LOADER INDICATOR CONTAINER */
+    .div-loader-indicator-container span {
+        font-size: 8rem;
+    }
+
+    /* LOADER CONTENT LOADING CONTAINER */
+    .div-loader-content-loading-container {
+        gap: 1.2rem;
+    }
+
+    .div-loader-content-loading-container>span {
+        font-size: 1.6rem;
+    }
+
+    /* LOADER CONTENT LOADING TRACK */
+    .div-loader-content-loading-track {
+        width: 24rem;
+    }
+
+    /* LOADER CONTENT LOADING STEP LIST */
+    .loader-content-loading-steps-list {
+        gap: 0.8rem;
+    }
+
+    /* LOADER CONTENT LOADING STEP LIST ITEM */
+    .loader-content-loading-steps-list-item p {
+        font-size: 1.2rem;
+    }
+
+    .loader-content-loading-steps-list-item span {
+        width: 0.4rem;
+        height: 0.6rem;
+    }
+
+}
