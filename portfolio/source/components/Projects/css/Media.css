@@ -1,5 +1,4 @@
 @media (max-width: 768px) {
-
     /* SECTION PROJECTS CONTAINER */
     .section-projects-container {
         gap: 3.2rem;
@@ -24,8 +23,8 @@
 
     /* PROJECTS CARD CONTAINER */
     .div-projects-card-container {
-        gap: 1.62rem;
-        padding: 2.4rem;
+        gap: 1.6rem;
+        padding: 3.2rem 0;
     }
 
     .div-projects-card-container::before {
@@ -61,5 +60,25 @@
     .div-projects-card-thumbnail-container span {
         font-size: 2.4rem;
     }
+}
 
+@media (max-width: 576px) {
+    /* SECTION PROJECTS CONTAINER */
+    .section-projects-container {
+        padding: 3.2rem 2.4rem;
+    }
+
+    /* HEADER SECTION PROJECTS CONTAINER */
+    .header-section-projects-container h2 {
+        font-size: 2.4rem;
+    }
+
+    /* HEADER PROJECT CARD OVERVIEW CONTAINER */
+    .header-projects-card-overview-container span {
+        font-size: 1rem;
+    }
+
+    .header-projects-card-overview-container h2 {
+        font-size: 2.4rem;
+    }
 }
