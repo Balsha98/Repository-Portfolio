@@ -3,57 +3,57 @@ import "./css/Experience.css";
 import "./css/Media.css";
 
 const EXPERIENCES = [
-	{
-		timeline: "2025 — Present",
-		position: "Junior Frontend Engineer",
-		company: "EZ-Booker (Contract)",
-		description:
-			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia molestiae maiores explicabo blanditiis asperiores assumenda, ipsa magnamrepudiandae maxime. Totam numquam dolores nam maiores fuga, tempore iusto pariatur consectetur at!",
-	},
-	{
-		timeline: "2024 — 2025",
-		position: "UI Intergration Specialist Intern",
-		company: "EZ-Booker (Internship/Full-Time)",
-		description:
-			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia molestiae maiores explicabo blanditiis asperiores assumenda, ipsa magnamrepudiandae maxime. Totam numquam dolores nam maiores fuga, tempore iusto pariatur consectetur at!",
-	},
-	{
-		timeline: "2023 — 2025",
-		position: "University Teaching Assistant",
-		company: "Rochester Institute of Technology @ Croatia (Part-Time)",
-		description:
-			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia molestiae maiores explicabo blanditiis asperiores assumenda, ipsa magnamrepudiandae maxime. Totam numquam dolores nam maiores fuga, tempore iusto pariatur consectetur at!",
-	},
+    {
+        timeline: "2025 — Present",
+        position: "Junior Frontend Engineer",
+        company: "EZ-Booker (Contract)",
+        description:
+            "Co-maintained the software solution made in PHP with the company’s CEO. Communicated with stakeholders regarding application upgrades and bug fixes. Helped build the software solution that led to its recent acquisition by Hoteza.",
+    },
+    {
+        timeline: "2024 — 2025",
+        position: "UI Integration Specialist Intern",
+        company: "EZ-Booker (Internship/Full-Time)",
+        description:
+            "Developed an alternative mobile application using PHP for clients' on-the-go needs. Had the opportunity to push live updates to production through GitHub and AWS. Credited with improving client retention and onboarding of new clients by 25%.",
+    },
+    {
+        timeline: "2023 — 2025",
+        position: "University Teaching Assistant",
+        company: "RIT Croatia (Part-Time)",
+        description:
+            "Helped students better understand the curriculum and technologies covered. Learned how to pass down knowledge more efficiently through regular tutoring sessions (individual/group). Developed key leadership, organizational, and communication skills through tutoring.",
+    },
 ];
 
 const Experience = function () {
-	return (
-		<section id="experience" className="section-experience-container">
-			<header className="header-section-experience-container">
-				<span>03 / Experience</span>
-				<h2>Where I've Worked</h2>
-			</header>
-			<ul className="section-experience-positions-list">
-				{EXPERIENCES.map(({ timeline, position, company, description }, i) => {
-					return (
-						<li key={i} className="section-experience-positions-list-item">
-							<span>{timeline}</span>
-							<div className="div-section-experience-positions-list-item-content-container">
-								<header className="header-section-experience-positions-list-item">
-									<h4>{position}</h4>
-									<div className="div-header-section-experience-positions-list-item-company-container">
-										<ion-icon src="/media/icons/arrow-right.svg" />
-										<span>{company}</span>
-									</div>
-								</header>
-								<p>{description}</p>
-							</div>
-						</li>
-					);
-				})}
-			</ul>
-		</section>
-	);
+    return (
+        <section id="experience" className="section-experience-container">
+            <header className="header-section-experience-container">
+                <span>03 / Experience</span>
+                <h2>Where I've Worked</h2>
+            </header>
+            <ul className="section-experience-positions-list">
+                {EXPERIENCES.map(({ timeline, position, company, description }, i) => {
+                    return (
+                        <li key={i} className="section-experience-positions-list-item">
+                            <span>{timeline}</span>
+                            <div className="div-section-experience-positions-list-item-content-container">
+                                <header className="header-section-experience-positions-list-item">
+                                    <h4>{position}</h4>
+                                    <div className="div-header-section-experience-positions-list-item-company-container">
+                                        <ion-icon src="/media/icons/arrow-right.svg" />
+                                        <span>{company}</span>
+                                    </div>
+                                </header>
+                                <p>{description}</p>
+                            </div>
+                        </li>
+                    );
+                })}
+            </ul>
+        </section>
+    );
 };
 
 export default Experience;
