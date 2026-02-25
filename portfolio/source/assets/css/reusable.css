@@ -1,6 +1,14 @@
+/* MAIN EDGE CONTAINER */
 .div-main-edge-container {
     width: 100%;
     max-width: 140rem;
     margin: 0 auto;
     padding: 3.2rem;
+}
+
+@media (max-width: 576px) {
+    /* MAIN EDGE CONTAINER */
+    .div-main-edge-container {
+        padding: 3.2rem 0;
+    }
 }
