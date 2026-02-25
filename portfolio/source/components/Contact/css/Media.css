@@ -1,5 +1,4 @@
 @media (max-width: 768px) {
-
     /* SECTION CONTACT CONTAINER */
     .section-contact-container {
         padding: 6.4rem 4.8rem;
@@ -28,5 +27,32 @@
     .section-contact-container a:visited span {
         font-size: 1.4rem;
     }
+}
 
+@media (max-width: 576px) {
+    /* SECTION CONTACT CONTAINER */
+    .section-contact-container {
+        gap: 1.6rem;
+        padding: 4.8rem 2.4rem;
+    }
+
+    .section-contact-container::before {
+        font-size: 12rem;
+    }
+
+    /* HEADER SECTION CONTACT CONTAINER */
+    .header-section-contact-container h4 {
+        width: 36rem;
+        font-size: 2.4rem;
+    }
+
+    .section-contact-container a:link ion-icon,
+    .section-contact-container a:visited ion-icon {
+        font-size: 1.4rem;
+    }
+
+    .section-contact-container a:link span,
+    .section-contact-container a:visited span {
+        font-size: 1.2rem;
+    }
 }
