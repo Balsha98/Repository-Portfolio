@@ -11,8 +11,18 @@
     backdrop-filter: blur(2.4rem);
 }
 
+/* MAIN NAVBAR SCROLL CONTAINER */
+.div-main-navbar-scroll-container {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 0.2rem;
+    background-image: linear-gradient(to right, var(--accent-primary), var(--accent-secondary));
+}
+
 /* MAIN EDGE CONTAINER */
-.div-main-navbar-container > .div-main-edge-container {
+.div-main-navbar-container>.div-main-edge-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -20,7 +30,7 @@
     transition: padding 0.2s ease-in-out;
 }
 
-.div-main-navbar-container > .fixed.div-main-edge-container {
+.div-main-navbar-container>.fixed.div-main-edge-container {
     padding: 1.6rem 3.2rem;
 }
 
