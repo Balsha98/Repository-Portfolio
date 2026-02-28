@@ -28,8 +28,8 @@ My personal portfolio website showcasing my projects, skills, and experience as 
 
 ### Prerequisites
 
-- Node.js 16.0 or higher
-- npm or yarn
+- Node.js 16.0 or higher.
+- npm (Node Package Manager).
 
 ### Setup Instructions
 
@@ -100,33 +100,34 @@ This portfolio is deployed on Vercel with a custom domain:
 ## Project Structure
 
 ```
-Portfolio/
+Repository-Portfolio/
 │
-├── public/             # Static assets
-│   └── ...                     # Favicon, images, etc.
+├── portfolio/          # Main application directory.
+│   │
+│   ├── public/         # Static public files.
+│   │   │
+│   │   ├── documents/          # Downloadable documents.
+│   │   │   └── resume.pdf      # Resume/CV file.
+│   │   │
+│   │   ├── media/
+│   │   │   ├── icons/          # Icon files.
+│   │   │   └── images/         # Image files.
+│   │   │
+│   │   └── portfolio.ico       # Site favicon.
+│   │
+│   └── src/            # Source files.
+│       │
+│       ├── assets/     # Project assets.
+│       │   ├── css/            # Stylesheets.
+│       │   └── hooks/          # Custom React hooks.
+│       │
+│       ├── components/ # React components
+│       │   └── ...             # Component directories.
+│       │
+│       ├── App.jsx     # Main app component.
+│       └── main.jsx    # Application entry point.
 │
-├── src/                # Source files
-│   │
-│   ├── assets/         # Project assets
-│   │   ├── images/             # Image files
-│   │   └── styles/             # CSS files
-│   │
-│   ├── components/     # React components
-│   │   ├── Header/             # Header component
-│   │   ├── About/              # About section
-│   │   ├── Projects/           # Projects showcase
-│   │   ├── Skills/             # Skills section
-│   │   ├── Contact/            # Contact section
-│   │   └── Footer/             # Footer component
-│   │
-│   ├── App.jsx         # Main app component
-│   ├── App.css         # Global styles
-│   └── main.jsx        # Entry point
-│
-├── index.html          # HTML template
-├── vite.config.js      # Vite configuration
-├── package.json        # Dependencies and scripts
-└── README.md           # Project documentation
+└── README.md           # Project documentation.
 ```
 
 ## Scripts
@@ -149,9 +150,9 @@ npm run lint
 
 If you enjoyed my work or have any questions, feel free to reach out!
 
+[![Portfolio](https://img.shields.io/badge/Portfolio-FF5722?style=for-the-badge&logo=todoist&logoColor=white)](https://bazovich.dev)
 [![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:balsa.bazovic@gmail.com)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/balsha-bazovich)
 [![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Balsha98)
-[![Portfolio](https://img.shields.io/badge/Portfolio-FF5722?style=for-the-badge&logo=todoist&logoColor=white)](https://bazovich.dev)
 
 ⭐ If you found this project helpful, please consider giving it a star!
