@@ -13,23 +13,90 @@ const PROJECTS = [
     },
     {
         type: "Environmental — SaaS Platform",
-        title: "Nestify Dashboard",
+        title: "Nestify Preservation",
         description:
             "An internal dashboard built for Genesee Land Trust to monitor and manage land preservation efforts across their conservation portfolio. Features interactive data visualization and reporting tools designed to support the organization's environmental mission.",
         stack: ["HTML5", "CSS3", "React.js", "ReCharts", "Pigeon"],
         link: "https://gltnestify.netlify.app/",
     },
     {
+        type: "Management — ToDo Application",
+        title: "Taskly ToDo",
+        description:
+            "A simple and focused task management app for adding, editing, and deleting daily tasks with a clear, completed, and pending breakdown structure. Everything you need to stay organized through the day, nothing you don't.",
+        stack: ["HTML5", "CSS3", "React.js", "localStorage"],
+        link: "https://mytasklytodo.netlify.app/",
+    },
+    {
+        type: "Ticketing — SaaS Platform",
+        title: "DevTix Tickets",
+        description:
+            "A gamified support ticketing platform where resolving tickets earns the user points, unlocks rankings, and climbs a specific leaderboard. Turns routine task management into an engaging experience that rewards consistency and speed.",
+        stack: ["HTML5", "CSS3", "JavaScript", "jQuery", "PHP", "MySQL"],
+        link: "",
+    },
+    {
+        type: "Entertainment — Classic Game",
+        title: "MindFlip Memory",
+        description:
+            "An interactive card-matching memory game where players flip and pair cards until the board is cleared. The game features smooth flip animations, a move counter (soon), and a clean minimal interface that keeps the focus on the game itself.",
+        stack: ["HTML5", "CSS3", "JavaScript", "jQuery", "FlagsAPI"],
+        link: "http://mindflip.netlify.app/",
+    },
+    {
+        type: "Entertainment — Classic Game",
+        title: "TicTacToe Clash",
+        description:
+            "A single-player Tic Tac Toe game against the computer with persistent score tracking and a full game history log. Built around clean game logic and easy-to-use user interface, keeping every match result on record as you play.",
+        stack: ["HTML5", "CSS3", "JavaScript", "jQuery", "localStorage"],
+        link: "http://mindflip.netlify.app/",
+    },
+    {
+        type: "Vehicles — SaaS Platform",
+        title: "SureDrive Rental",
+        description:
+            "A car rental browsing platform where users can explore available vehicles, filter by category, and view detailed specifications before booking. Built with a clean layout that puts the vehicles front and centre and makes the selection process effortless.",
+        stack: ["HTML5", "CSS3", "JavaScript", "jQuery", "PHP", "MySQL"],
+        link: "",
+    },
+    {
+        type: "Retail - Brand Awareness",
+        title: "AirJordan Brand",
+        description:
+            "A brand-inspired shoe showcase built around the Air Jordan aesthetic, featuring a curated selection of iconic silhouettes with clean product presentation. Designed to capture the energy of the Jordan brand through bold typography, sharp imagery, and a premium browsing experience.",
+        stack: ["HTML5", "CSS3", "JavaScript", "Cookies"],
+        link: "https://airjordanbrand.netlify.app/",
+    },
+    {
+        type: "Entertainment - Jokes Galore",
+        title: "JokeGenerator API",
+        description:
+            "A lightweight single-page app that fetches and displays random jokes from the JokeAPI with a single click. A clean exercise in API integration, async JavaScript, and delivering a delightful micro-experience with minimal interface.",
+        stack: ["HTML5", "CSS3", "JavaScript", "JokeAPI"],
+        link: "https://jkzgen.netlify.app/",
+    },
+    {
         type: "Sports — SaaS Platform",
         title: "SportScout Dashboard",
         description:
             "A comprehensive sports management platform for tracking leagues, teams, players, and fans in one centralized interface. Designed for clarity and speed, giving administrators, managers, and coaches an overview of everything happening across their organization.",
-        stack: ["HTML5", "CSS3", "PHP", "MySQL"],
+        stack: ["HTML5", "CSS3", "JavaScript", "jQuery", "PHP", "MySQL"],
         link: "https://sportscout.infinityfreeapp.com/",
     },
 ];
 
 const Projects = function () {
+    const handleOpenLink = (e) => {
+        const parent = e.target.closest(".div-projects-card-container");
+
+        const { href, target } = parent.dataset;
+
+        // Guard clause.
+        if (!href) return;
+
+        window.open(href, target);
+    };
+
     return (
         <section id="work" className="section-projects-container">
             <header className="header-section-projects-container">
@@ -38,10 +105,11 @@ const Projects = function () {
             </header>
             <div className="div-projects-cards-container">
                 {PROJECTS.map(({ type, title, description, stack, link }, i) => {
-                    if (i === 0) {
+                    if (i % 3 === 0) {
+                        const isReverse = (i / 3) % 2 !== 0;
+
                         return (
-                            <div key={i} className="div-projects-card-container">
-                                <a href={link} target="_blank" />
+                            <div key={i} id={i + 1} className={`div-projects-card-container${isReverse ? " reverse" : ""}`} onClick={handleOpenLink} data-href={link} data-target="_blank">
                                 <div className="div-projects-card-overview-container">
                                     <header className="header-projects-card-overview-container">
                                         <span>{type}</span>
@@ -61,15 +129,15 @@ const Projects = function () {
                                     </div>
                                 </div>
                                 <div className="div-projects-card-thumbnail-container">
-                                    <span>{title.split(" ")[0]}</span>
+                                    <ion-icon src={`/media/icons/${title.split(" ")[0].toLowerCase()}.svg`} />
+                                    {link.length === 0 && <span>In Development</span>}
                                 </div>
                             </div>
                         );
                     }
 
                     return (
-                        <div key={i} className="div-projects-card-container">
-                            <a href={link} target="_blank" />
+                        <div key={i} className="div-projects-card-container" onClick={handleOpenLink} data-href={link} data-target="_blank">
                             <header className="header-projects-card-overview-container">
                                 <span>{type}</span>
                                 <h2>{title}</h2>

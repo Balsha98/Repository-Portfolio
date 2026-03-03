@@ -62,15 +62,38 @@
     width: 100%;
 }
 
-.div-projects-card-container:first-child {
+.div-projects-card-container[id] {
     grid-column: span 2;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 3.2rem;
+}
+
+.reverse.div-projects-card-container[id] .div-projects-card-overview-container {
+    order: 2;
+}
+
+.reverse.div-projects-card-container[id] .div-projects-card-thumbnail-container {
+    order: 1;
+}
+
+.div-projects-card-container[id="1"] {
     border-bottom: 0.2rem solid var(--border-primary);
 }
 
-.div-projects-card-container:nth-child(even)::after {
+.div-projects-card-container[id="4"],
+.div-projects-card-container[id="7"] {
+    border-top: 0.2rem solid var(--border-primary);
+    border-bottom: 0.2rem solid var(--border-primary);
+}
+
+.div-projects-card-container[id="10"] {
+    border-top: 0.2rem solid var(--border-primary);
+}
+
+.div-projects-card-container:nth-child(2)::after,
+.div-projects-card-container:nth-child(5)::after,
+.div-projects-card-container:nth-child(8)::after {
     content: "";
     position: absolute;
     top: 0;
@@ -79,14 +102,6 @@
     height: 100%;
     background-color: var(--border-primary);
     transform: translateX(50%);
-}
-
-.div-projects-card-container > a:link,
-.div-projects-card-container > a:visited {
-    position: absolute;
-    display: inline-block;
-    width: 100%;
-    height: 100%;
 }
 
 /* PROJECTS CARD OVERVIEW CONTAINER */
@@ -149,16 +164,43 @@
 
 /* PROJECT CARD THUMBNAIL CONTAINER */
 .div-projects-card-thumbnail-container {
+    position: relative;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+    gap: 1.6rem;
     background-color: var(--container-surface);
+    transition: background-color 0.2s ease-in-out;
+}
+
+.div-projects-card-container[id]:hover .div-projects-card-thumbnail-container {
+    background-color: var(--container-primary);
+}
+
+.div-projects-card-thumbnail-container::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 20rem;
+    height: 20rem;
+    background-color: var(--accent-primary);
+    border-radius: 50%;
+    filter: blur(16rem);
+    transform: translate(-50%, -50%);
+    opacity: 0.2;
+}
+
+.div-projects-card-thumbnail-container ion-icon {
+    font-size: 6.4rem;
+    color: var(--accent-primary);
 }
 
 .div-projects-card-thumbnail-container span {
-    font-size: 3.2rem;
-    font-family: var(--font-display);
-    font-weight: 800;
+    font-size: 1.2rem;
+    letter-spacing: 6px;
     text-transform: uppercase;
-    color: var(--accent-primary);
+    color: var(--text-primary);
+    opacity: 0.8;
 }
