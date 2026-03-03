@@ -1,7 +1,7 @@
 @media (max-width: 768px) {
     /* SECTION CONTACT CONTAINER */
     .section-contact-container {
-        padding: 6.4rem 4.8rem;
+        padding: 6.4rem 3.2rem;
     }
 
     .section-contact-container::before {

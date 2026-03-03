@@ -10,6 +10,7 @@
         flex-direction: column;
         align-items: flex-start;
         gap: 1.2rem;
+        padding: 0 3.2rem;
     }
 
     .header-section-projects-container h2 {
@@ -24,7 +25,7 @@
     /* PROJECTS CARD CONTAINER */
     .div-projects-card-container {
         gap: 1.6rem;
-        padding: 3.2rem 0;
+        padding: 3.2rem;
         border-bottom: 0.2rem solid var(--border-primary);
     }
 
@@ -58,14 +59,18 @@
 }
 
 @media (max-width: 576px) {
-    /* SECTION PROJECTS CONTAINER */
-    .section-projects-container {
-        padding: 3.2rem 2.4rem;
+    /* HEADER SECTION PROJECTS CONTAINER */
+    .header-section-projects-container {
+        padding: 0 2.4rem;
     }
 
-    /* HEADER SECTION PROJECTS CONTAINER */
     .header-section-projects-container h2 {
         font-size: 2.4rem;
+    }
+
+    /* PROJECTS CARD CONTAINER */
+    .div-projects-card-container {
+        padding: 2.4rem;
     }
 
     /* HEADER PROJECT CARD OVERVIEW CONTAINER */

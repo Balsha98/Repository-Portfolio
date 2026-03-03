@@ -10,6 +10,7 @@
         flex-direction: column;
         align-items: flex-start;
         gap: 1.2rem;
+        padding: 0 3.2rem;
     }
 
     .header-section-experience-container h2 {
@@ -20,6 +21,7 @@
     .section-experience-positions-list-item {
         flex-direction: column;
         gap: 1.6rem;
+        padding: 0 3.2rem 3.2rem;
     }
 
     .section-experience-positions-list-item > span {
@@ -33,14 +35,18 @@
 }
 
 @media (max-width: 576px) {
-    /* SECTION EXPERIENCE CONTAINER */
-    .section-experience-container {
-        padding: 4.8rem 2.4rem;
+    /* HEADER SECTION EXPERIENCE CONTAINER */
+    .header-section-experience-container {
+        padding: 0 2.4rem;
     }
 
-    /* HEADER SECTION EXPERIENCE CONTAINER */
     .header-section-experience-container h2 {
         font-size: 2.4rem;
+    }
+
+    /* SECTION EXPERIENCE POSITIONS LIST ITEM */
+    .section-experience-positions-list-item {
+        padding: 0 2.4rem 3.2rem;
     }
 
     /* HEADER SECTION EXPERIENCE POSITIONS LIST ITEM */

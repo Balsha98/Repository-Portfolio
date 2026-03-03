@@ -2,6 +2,7 @@
     /* SECTION HERO CONTAINER */
     .section-hero-container {
         gap: 3.2rem;
+        padding: 3.2rem;
     }
 
     /* HEADER SECTION HERO CONTAINER HEADING */
