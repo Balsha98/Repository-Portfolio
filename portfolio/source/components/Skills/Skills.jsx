@@ -9,7 +9,7 @@ const SKILLS = [
 	},
 	{
 		title: "Frameworks",
-		stack: ["React.js / Next.js", "Node.js / Nest.js", "React Native", "SwiftUI"],
+		stack: ["React.js / Next.js", "Node.js / Express.js", "React Native", "SwiftUI"],
 	},
 	{
 		title: "Tooling",
