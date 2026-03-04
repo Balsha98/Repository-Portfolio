@@ -47,6 +47,18 @@
         all: unset;
     }
 
+    .div-projects-card-container > a:link,
+    .div-projects-card-container > a:visited {
+        top: 2.4rem;
+        right: 2.4rem;
+    }
+
+    /* PROJECTS CARD OVERVIEW CONTAINER */
+    .div-projects-card-overview-container > a:link,
+    .div-projects-card-overview-container > a:visited {
+        right: 0;
+    }
+
     /* PROJECT CARD THUMBNAIL CONTAINER */
     .div-projects-card-thumbnail-container {
         gap: 0.8rem;
