@@ -8,7 +8,7 @@ const EXPERIENCES = [
         position: "Junior Frontend Engineer",
         company: "EZ-Booker (Contract)",
         description:
-            "Co-maintained the software solution made in React and Node.js with the company's CEO. Communicated with stakeholders regarding application upgrades and bug fixes. Helped build the software solution that led to its recent acquisition by Hoteza.",
+            "Co-maintained the software solution made in React.js and Node.js with the company's CEO. Communicated with stakeholders regarding application upgrades and bug fixes. Helped build the software solution that led to its recent acquisition by Hoteza.",
     },
     {
         timeline: "2024 — 2025",
