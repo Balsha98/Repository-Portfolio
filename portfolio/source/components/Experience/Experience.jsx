@@ -8,14 +8,14 @@ const EXPERIENCES = [
         position: "Junior Frontend Engineer",
         company: "EZ-Booker (Contract)",
         description:
-            "Co-maintained the software solution made in PHP with the company’s CEO. Communicated with stakeholders regarding application upgrades and bug fixes. Helped build the software solution that led to its recent acquisition by Hoteza.",
+            "Co-maintained the software solution made in React and Node.js with the company's CEO. Communicated with stakeholders regarding application upgrades and bug fixes. Helped build the software solution that led to its recent acquisition by Hoteza.",
     },
     {
         timeline: "2024 — 2025",
         position: "UI Integration Specialist Intern",
         company: "EZ-Booker (Internship/Full-Time)",
         description:
-            "Developed an alternative mobile application using PHP for clients' on-the-go needs. Had the opportunity to push live updates to production through GitHub and AWS. Credited with improving client retention and onboarding of new clients by 25%.",
+            "Developed an alternative hybrid application using React.js for clients' on-the-go needs. Contributed to live production updates through GitHub and AWS on a daily basis. Credited with improving client retention and onboarding of new clients by 50%.",
     },
     {
         timeline: "2023 — 2025",
