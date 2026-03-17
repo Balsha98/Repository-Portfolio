@@ -121,8 +121,8 @@ Repository-Portfolio/
 │       │   ├── css/            # Stylesheets.
 │       │   └── hooks/          # Custom React hooks.
 │       │
-│       ├── components/ # React components
-│       │   └── ...             # Component directories.
+│       ├── views/      # React views.
+│       │   └── ...             # View directories.
 │       │
 │       ├── App.jsx     # Main app component.
 │       └── main.jsx    # Application entry point.
