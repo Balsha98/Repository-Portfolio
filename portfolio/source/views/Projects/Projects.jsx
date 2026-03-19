@@ -10,7 +10,7 @@ const PROJECTS = [
             "A video streaming platform inspired by the Paramount experience, featuring a content browsing interface, category filtering, and a clean cinematic layout. Built with a focus on visual polish, delivering a seamless viewing discovery experience across all screen sizes.",
         stack: ["JavaScript", "React.js", "Node.js", "CSS3", "Supabase"],
         repository: "https://github.com/Balsha98/Repository-PinnacleStreams",
-        host: "https://pinnaclestreams.vercel.app/",
+        host: "",
     },
     {
         type: "Environmental — SaaS Platform",
