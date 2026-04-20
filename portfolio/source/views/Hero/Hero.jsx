@@ -9,7 +9,7 @@ const Hero = function () {
                 <header className="header-section-hero-container">
                     <span>Available for Hire</span>
                     <h1 className="header-section-hero-container-heading">
-                        <span>Frontend</span>
+                        <span>FullStack</span>
                         <span>Engineer</span>
                     </h1>
                 </header>

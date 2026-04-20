@@ -5,10 +5,10 @@ import "./css/Media.css";
 const EXPERIENCES = [
     {
         timeline: "2025 — Present",
-        position: "Junior Frontend Engineer",
+        position: "Full-Stack Engineer",
         company: "EZ-Booker (Contract)",
         description:
-            "Co-maintained the software solution made in React.js and Node.js with the company's CEO. Communicated with stakeholders regarding application upgrades and bug fixes. Helped build the software solution that led to its recent acquisition by Hoteza.",
+            "Co-maintained the software solution made in React.js and Python with the company's CEO. Communicated with stakeholders regarding application upgrades and bug fixes. Helped build the software solution that led to its recent acquisition by Hoteza.",
     },
     {
         timeline: "2024 — 2025",
