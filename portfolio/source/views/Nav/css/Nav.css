@@ -22,7 +22,7 @@
 }
 
 /* MAIN EDGE CONTAINER */
-.div-main-navbar-container>.div-main-edge-container {
+.div-main-navbar-container > .div-main-edge-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -30,7 +30,7 @@
     transition: padding 0.2s ease-in-out;
 }
 
-.div-main-navbar-container>.fixed.div-main-edge-container {
+.div-main-navbar-container > .fixed.div-main-edge-container {
     padding: 1.6rem 3.2rem;
 }
 
