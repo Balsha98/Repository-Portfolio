@@ -4,21 +4,21 @@ import "./css/Media.css";
 
 const EXPERIENCES = [
     {
-        timeline: "Sep, 2024 — Present",
+        timeline: "2024 — Present",
         position: "Full-Stack Engineer",
         company: "EZ-Booker (Contract)",
         description:
             "Co-maintained the software solution made in React.js and Python with the company's CEO. Communicated with stakeholders regarding application upgrades and bug fixes. Helped build the software solution that led to its recent acquisition by Hoteza.",
     },
     {
-        timeline: "Jun, 2024 — Sep, 2024",
+        timeline: "2024 — 2024",
         position: "UI Integration Specialist Intern",
         company: "EZ-Booker (Internship/Full-Time)",
         description:
             "Developed an alternative hybrid application using React.js for clients' on-the-go needs. Contributed to live production updates through GitHub and AWS on a daily basis. Credited with improving client retention and onboarding of new clients by 50%.",
     },
     {
-        timeline: "Sep, 2023 — May, 2025",
+        timeline: "2023 — 2025",
         position: "University Teaching Assistant",
         company: "RIT Croatia (Part-Time)",
         description:
