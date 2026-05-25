@@ -18,8 +18,8 @@ const PROJECTS = [
         description:
             "An internal dashboard built for Genesee Land Trust to monitor and manage land preservation efforts across their conservation portfolio. Features interactive data visualization and reporting tools designed to support the organization's environmental mission.",
         stack: ["HTML5", "CSS3", "React.js", "ReCharts", "Pigeon"],
-        repository: "https://github.com/Balsha98/Repository-NestifyDashboard",
-        host: "https://gltnestify.netlify.app/",
+        repository: "https://github.com/Balsha98/Repository-Nestify",
+        host: "https://github.com/Balsha98/Repository-Nestify",
     },
     {
         type: "Management — ToDo Application",
