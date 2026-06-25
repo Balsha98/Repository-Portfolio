@@ -9,7 +9,7 @@ const SKILLS = [
     },
     {
         title: "Backend",
-        stack: ["Java", "Python", "Node.js", "Supabase"],
+        stack: ["Java", "PHP", "Node.js", "Supabase"],
     },
     {
         title: "Cloud & Tools",
