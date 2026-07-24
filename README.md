@@ -159,4 +159,4 @@ If you enjoyed my work or have any questions, feel free to reach out!
 
 ## License
 
-Personal project - no license has been set.
+Personal project - all rights reserved.
