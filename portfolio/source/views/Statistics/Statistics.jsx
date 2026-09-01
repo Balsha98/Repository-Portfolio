@@ -11,11 +11,11 @@ const Statistics = function () {
 				<Marquee />
 				<ul className="statistics-container-list">
 					<li className="statistics-container-list-item">
-						<span>2+</span>
+						<span>3+</span>
 						<p>Years of Experience</p>
 					</li>
 					<li className="statistics-container-list-item">
-						<span>15+</span>
+						<span>16+</span>
 						<p>Projects Deployed</p>
 					</li>
 					<li className="statistics-container-list-item">
