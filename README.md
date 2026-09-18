@@ -1,6 +1,6 @@
-# BAZOVICH.DEV - Frontend Engineer Portfolio
+# BAZOVICH.DEV - Full-Stack Developer Portfolio
 
-My personal portfolio website showcasing my projects, skills, and experience as a frontend engineer. Built with modern web technologies and deployed on a custom domain.
+My personal portfolio website showcasing my projects, skills, and experience as a full-stack developer. Built with modern web technologies and deployed on a custom domain.
 
 ## Features
 
