@@ -4,11 +4,18 @@ import "./css/Media.css";
 
 const EXPERIENCES = [
     {
+        timeline: "2026 — Present",
+        position: "Junior Software Developer",
+        company: "Belvista Software (Full-Time)",
+        description:
+            "Participating in daily stand-ups regarding various client-related solutions. Contributing to both internal and external product development. Working across the full stack: .NET, React (TypeScript), SQL.",
+    },
+    {
         timeline: "2024 — Present",
         position: "Full-Stack Developer",
         company: "EZ-Booker (Contract)",
         description:
-            "Co-maintained the software solution made in React.js and PHP with the company's CEO. Communicated with stakeholders regarding application upgrades and bug fixes. Helped build the software solution that led to its recent acquisition by Hoteza.",
+            "Co-maintaining the software solution made in React.js and PHP with the company's CEO. Communicating with stakeholders regarding application upgrades and bug fixes. Helping build the software solution that led to its recent acquisition by Hoteza.",
     },
     {
         timeline: "2024 — 2024",
