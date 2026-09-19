@@ -8,7 +8,7 @@ const EXPERIENCES = [
         position: "Junior Software Developer",
         company: "Belvista Software (Full-Time)",
         description:
-            "Participating in daily stand-ups regarding various client-related solutions. Contributing to both internal and external product development. Working across the full stack: .NET, React (TypeScript), SQL.",
+            "Participating in daily stand-ups regarding various client-related solutions. Contributing to both Belvista's internal and external clients' product development. Having a chance to work across the full stack: C# (.NET), React (TypeScript), SQL (T-SQL).",
     },
     {
         timeline: "2024 — Present",
