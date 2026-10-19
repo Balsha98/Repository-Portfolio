@@ -11,16 +11,16 @@ const EXPERIENCES = [
             "Participating in daily stand-ups regarding various client-related solutions. Contributing to both Belvista's internal and external clients' product development. Having a chance to work across the full stack: C# (.NET), React (TypeScript), SQL (T-SQL).",
     },
     {
-        timeline: "2024 — Present",
+        timeline: "2024 — 2026",
         position: "Full-Stack Developer",
-        company: "EZ-Booker/Expiriento (Contract)",
+        company: "EZ-Booker (now Expiriento) (Contract)",
         description:
             "Co-maintaining the software solution made in React.js and PHP with the company's CEO. Communicating with stakeholders regarding application upgrades and bug fixes. Helping build the software solution that led to its recent acquisition by Hoteza.",
     },
     {
         timeline: "2024 — 2024",
         position: "UI Integration Specialist Intern",
-        company: "EZ-Booker/Expiriento (Internship/Full-Time)",
+        company: "EZ-Booker (now Expiriento) (Internship/Full-Time)",
         description:
             "Developed an alternative hybrid application using React.js for clients' on-the-go needs. Contributed to live production updates through GitHub and AWS on a daily basis. Credited with improving client retention and onboarding of new clients by 50%.",
     },
