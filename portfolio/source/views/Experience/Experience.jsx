@@ -13,14 +13,14 @@ const EXPERIENCES = [
     {
         timeline: "2024 — Present",
         position: "Full-Stack Developer",
-        company: "EZ-Booker (Contract)",
+        company: "EZ-Booker/Expiriento (Contract)",
         description:
             "Co-maintaining the software solution made in React.js and PHP with the company's CEO. Communicating with stakeholders regarding application upgrades and bug fixes. Helping build the software solution that led to its recent acquisition by Hoteza.",
     },
     {
         timeline: "2024 — 2024",
         position: "UI Integration Specialist Intern",
-        company: "EZ-Booker (Internship/Full-Time)",
+        company: "EZ-Booker/Expiriento (Internship/Full-Time)",
         description:
             "Developed an alternative hybrid application using React.js for clients' on-the-go needs. Contributed to live production updates through GitHub and AWS on a daily basis. Credited with improving client retention and onboarding of new clients by 50%.",
     },
